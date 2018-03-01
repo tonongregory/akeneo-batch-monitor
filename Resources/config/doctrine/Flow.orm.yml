@@ -1,0 +1,19 @@
+FlowMonitoringBundle\Entity\Flow:
+  type: entity
+  table: flow
+  repositoryClass: FlowMonitoringBundle\Repository\FlowRepository
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+          strategy: AUTO
+    context:
+      type: json_array
+      column: context
+    jobExecutionId:
+      type: integer
+      column: job_execution_id
+    triggerClassName:
+      type: string
+      column: trigger_class_name

@@ -1,0 +1,28 @@
+{
+    "name": "tonongregory/akeneo-batch-monitor",
+    "description": "Bundle for monitoring akeneo batch",
+    "type": "symfony-bundle",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Grégory Tonon",
+            "email": "tonon.gregory@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1.0",
+        "akeneo/pim-community-dev": "~2",
+        "symfony/symfony": "^3.4"
+    },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/akeneo/pim-community-dev.git",
+        "branch": "master"
+      }
+    ],
+    "autoload": {
+        "psr-4": { "FlowMonitoringBundle": "/" }
+    }
+}

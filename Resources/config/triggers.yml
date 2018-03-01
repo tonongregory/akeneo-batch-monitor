@@ -1,0 +1,6 @@
+services:
+  flow_monitoring.trigger.filesystem:
+    abstract: true
+    class: FlowMonitoringBundle\Trigger\FileSystem
+    tags:
+      - { name: 'flow_monitoring.trigger' }

@@ -1,0 +1,8 @@
+services:
+  flow_monitoring.event_subscriber.batch_execution_subscriber:
+    class: FlowMonitoringBundle\EventSubscriber\BatchJobExecutionSubscriber
+    arguments:
+      - '@doctrine'
+      - '@flow_monitoring.monitor.flow'
+    tags:
+      - { name: kernel.event_subscriber }
